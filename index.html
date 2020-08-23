@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleCode todolist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b97db328cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hé lô hôm nay mình làm to do list bằng JS nhé ^^ -->
+    <!-- nhớ chuẩn bị đủ hàng mới high được nhé -->
+    <div class="my-todolist">
+        <header><h1>SimpleCode todolist</h1></header>
+        <form action="">
+            <input type="text" class="todolist-input" placeholder="Add to do here">
+            <button type="submit" class="todolist-button">
+                <i class="fas fa-plus-circle"></i>
+                <!-- này mình dùng font awesome nhé -->
+            </button>
+        </form>
+        <div class="todolist-container">
+            <!-- Phần này mình sẽ chia làm 2 phần chính -->
+            <!-- 1 là phần to do list (những công việc cần làm) -->
+            <!-- 2 là phần done list( những công v đã làm xong nhe các bạn) -->
+            <div class="todolist">
+                <h2>Todo-list</h2>
+                <ul>
+                    <!-- mỗi cv mình cho nó vào 1 to do item -->
+                    <!-- <div class="todo-item">
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, numquam!</li>
+                        <button class="tick"><i class="fas fa-check"></i></button>
+                        <button class="trash"><i class="fas fa-trash"></i></button>
+                    </div>
+                    <div class="todo-item">
+                        <li>Lorem ipsum dolonumquam!</li>
+                        <button class="tick"><i class="fas fa-check"></i></button>
+                        <button class="trash"><i class="fas fa-trash"></i></button>
+                    </div>
+                    <div class="todo-item">
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, numquam!</li>
+                        <button class="tick"><i class="fas fa-check"></i></button>
+                        <button class="trash"><i class="fas fa-trash"></i></button>
+                    </div> -->
+                    
+                    <!-- Mỗi item sẽ có nội dung và 2 nút là tích và xóa mình thêm 1 số cái nữa hén -->
+                </ul>
+            </div>
+            <div class="todolist-done">
+                <h2>Done-list</h2>
+                <ul>
+                    <!-- <div class="todo-item">
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, numquam!</li>
+                        <button class="tick"><i class="fas fa-check"></i></button>
+                        <button class="trash"><i class="fas fa-trash"></i></button>
+                    </div>
+                    <div class="todo-item">
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, numquam!</li>
+                        <button class="tick"><i class="fas fa-check"></i></button>
+                        <button class="trash"><i class="fas fa-trash"></i></button>
+                    </div>
+                    <div class="todo-item">
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, numquam!</li>
+                        <button class="tick"><i class="fas fa-check"></i></button>
+                        <button class="trash"><i class="fas fa-trash"></i></button>
+                    </div> -->
+                </ul>
+                <!-- vậy là xong mình giả sử có 2 list để dễ css chứ xíu nữa mình xóa hết để thêm bằng js nhen -->
+            </div>
+            <!-- Bố cục tương đối giống nhau  -->
+            <!-- Bây giờ mình sẽ thêm 1 số item vào cái ul (thêm những công việc vào danh sách) -->
+            <!-- mình thêm trước để cacsc bạn dễ hình dung và css tí nữa mình dùng JS thêm -->
+           
+        </div>
+        <button class="clear">Clear Storage</button>
+    </div>
+</body>
+<!-- :)) k thêm mà ngồi test cmj ^^ -->
+<script src="main.js"></script>
+</html>
+
+<!-- toàn bộ nó hơi dài mình có nhiều cách rút ngắn tuy nhiên muốn tường tận cho mọi người hiểu :v -->
+<!-- nếu thấy hay like share và sub để mình cso thểm động lực nhé <3 -->

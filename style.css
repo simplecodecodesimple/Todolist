@@ -1,0 +1,128 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input,button{
+    outline: none;
+    border: none;
+}
+button{
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    font-family: 'Pangolin', cursive;
+    background-color: rgb(255, 192, 218);
+    /* này mình chuẩn bị màu trước chứ k phải thần thánh đâu mà nhớ :)) */
+}
+.my-todolist{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* màu hồng xinh xinh :) */
+form{
+    display: flex;
+    margin-top: 20px;
+}
+form input,form button{
+    padding: 12px;
+    font-size:16px;
+    /* chậc nó k ăn font */
+    font-family: 'Pangolin', cursive;
+}
+form button{
+    background-color: rgb(241, 134, 188);
+    color: white;
+    /* hình như vis code mới upđat hay sao mà gợi ý khó chịu vl :(( */
+}
+
+/* bây giờ tới phần danh sách to do list và done nhen ^^  */
+.todolist-container{
+    display: flex;
+    width: 1140px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.todolist,.todolist-done{
+    width: 50%;
+    padding: 20px;
+}
+.todolist-done .todo-item{
+    color: gray;
+    text-decoration: line-through;
+    /* ngáo :) */
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+/* giờ chỉnh từng cái item của list to do cho đẹp xíu chứ nhìn củ chcuosoi vl */
+.todo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 10px 0;
+    transition: all ease 0.4s;
+    /* trans để tí mình làm hiểu ứng done cái công việc nè */
+}
+.todo-item li{
+    /* thấy nó thụt dô k */
+    flex: 1;
+    padding-left: 20px;
+}
+.todo-item button{
+    padding: 20px;
+    background-color: rgb(241, 134, 188);
+    color: white;
+}
+/* tá đá :)))))))))))))))))))))))) */
+.todo-item button.tick:hover{
+    background-color: hotpink;
+    /* giờ mới nhận ra mình gõ BC là nó ra :) */
+}
+.todo-item button.trash{
+    background-color: rgb(216, 25, 25,0.863);
+    /* tui chuẩn bị màu rồi đừng hỏi tại sao :) */
+}
+.todo-item button.trash:hover{
+    background-color: rgb(255, 31, 31);
+}
+/* tạm rồi :) nghỉ mệt xíu đi ae */
+ul{
+    background-color: hotpink;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.fas{
+    pointer-events: none;
+    /* cái này mình sẽ giải thích như sau */
+    /* xíu nữa mình cần click vào cái nút ticsk với xóa bằng cách lấy event.target */
+    /* nên phải tắt cái fass đi nếu không nó sẽ lấy thằng <i> mình chỉ muốn nó lấy thẻ button thôi */
+}
+
+.done button.tick{
+    display: none;
+    /* cái này xíu nữa những cái công việc to do mà hoàn thành
+    mình sẽ thêm vào class done thì lúc đó nó sẽ k còn dấu tích
+    có nghĩa là nó qua bên done list mình muốn nó có thùng rác thôi chứ k còn chức năng tích làm gì cả */
+}
+.clear{
+    padding: 20px 50px;
+}
+.clear:hover{
+    background-color: #fff;
+}
+/* này clear để xóa bộ nhớ tí dùng bên js */
+/* vậy là xong phần giao diện rồi */
